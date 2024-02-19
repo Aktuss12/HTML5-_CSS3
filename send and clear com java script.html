@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <form action="" method="post">
+    <fieldset>
+        <legend>Formulário de Cadastro</legend>
+        <label for="curso">Curso:</label>
+        <input type="text" size="25" maxlength="50">
+            <p><label for="caixasenha">Senha:</label>   
+        <input type="password" size="20" maxlength="100"
+    name="caixasenha">
+            <p><label for="civil">Estado Civil:</label>
+        <input type="radio" name="civil" value="Sol"> Solteiro(a)
+        <input type="radio" name="civil" value="Cas"> Casado(a)
+        <input type="radio" name="civil" value="Ama"> Amaziado(a)
+            <p>Instrumento Preferido:<br><input type="checkbox"
+    name="item1" value="bateria"> Bateria
+        <br><input type="checkbox" name="item2" value="teclado"> Teclado
+        <br><input type="checkbox" name="item3" value="guitarra"> Guitarra
+            <p>Cidade:</p>
+        <select name="cidade">
+            <option value="end">Endereço
+            <option value="jales">Jales
+            <option value="santa">Santa Fé Do Sul
+        </select>
+            <p><label for="opinião">Deixe Sua Opnião Aqui:</label>
+        <br><textarea name="areadotexto" rows="3" cols="45"></textarea><p></p> 
+         
+        </form>
+    </body>
+    <script>
+        function valida(f){
+            if(f.nome.value==""){
+            alert("O campo nome não pode ficar vazio, por favor o preencha :)");
+            return false;
+            }
+        }
+    </script> 
+    <body>
+        <form action="" method="GET" onsubmit="return valida(this);">
+            <label for="nome">
+            <input type="submit" id="nome" name="nome">
+            <input type="reset" name="Limpar">
+        </form>
+</fieldset>
+    </body>
+</body>
+</html>
