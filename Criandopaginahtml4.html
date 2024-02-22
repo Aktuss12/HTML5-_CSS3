@@ -1,0 +1,150 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <!-- Cabeça do site -->
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+        <title>Curso de HTML5 + CSS</title>
+    </head>
+
+    <!-- Corpo do site -->
+    <body bgcolor="#D8BFD8"> <!-- bgcolor é um atributo obsoleto. Considere usar CSS para estilização. -->
+        <div align="center"> <!-- align é um atributo obsoleto. Considere usar CSS para alinhamento. -->
+            <font size="5" color="blue" face="Comic Sans MS"> <!-- A tag <font> é obsoleta em HTML5. Use CSS para estilização de texto. -->
+                <b>Neste curso, você aprenderá a criar uma página web de um jeito super divertido e interativo.</b>
+            </font>
+            <br><br>
+
+            <!-- Links -->
+            <a href="#link1">Aulas</a>
+            <a href="#link2">Mídias</a> 
+            <a href="#link3">Formulários</a>
+            <br><br>
+
+            <!-- Imagem -->
+            <img src="html.png" width="300" height="250" title="HTML" border="2" align="center"> <!-- border e align são atributos obsoletos. Use CSS. -->
+            <br><br>
+
+        </div>
+
+        <div align="left"> <!-- align é um atributo obsoleto. Use CSS. -->
+            <font size="4" color="blue" face="Verdana"> <!-- A tag <font> é obsoleta em HTML5. Use CSS. -->
+                <b><i>A seguir, vamos dar um breve resumo no que foi visto até agora.</i></b>
+            </font>
+        </div>
+
+        <!-- Div 2 -->        
+        <div align="center"> <!-- align é um atributo obsoleto. Use CSS. -->
+            <font size="3" color="black" face="Arial"> <!-- A tag <font> é obsoleta em HTML5. Use CSS. -->
+                <h3 id="link1"><u>Aulas</u></h3>
+            </font>
+        </div>
+
+        <!-- Imagem 2 -->
+        <img src="htag.png" width="300" height="250" title="HTML" align="right"> <!-- align é um atributo obsoleto. Use CSS. -->
+        <div align="left"> <!-- align é um atributo obsoleto. Use CSS. -->
+
+            <!-- Tabela -->         
+            <ol type="1" start="1">
+                <!-- Aqui você lista os itens da sua aula. Tudo certo! -->
+                <li>Como funciona a internet?</li>
+                <li>Instalando o editor Notepad++</li>
+                <li>Marcadores padrões do HTML</li>
+                <li>Técnicas de indentação</li>
+                <li>Tags - Parte 1</li>
+                <li>Tags - Parte 2</li>
+                <li>Links</li>
+                <li>Inserindo imagens</li>
+                <li>Tabelas</li>
+                <li>Formatando tabelas</li>
+                <li>Formulários</li>
+                <li>Enviar e limpar dados</li>
+                <li>Tags multimídia</li>
+                <li>Meta Tags</li>
+            </ol>
+        </div>
+
+        <!-- Div 3 -->
+        <div align="center" id="link2"> <!-- align é um atributo obsoleto. Use CSS. -->
+            <embed src="audio.mp3"> <!-- Para áudio, considere usar a tag <audio> do HTML5. -->
+            <embed src="video.mp4" width="300" height="150"> <!-- Para vídeo, considere usar a tag <video> do HTML5. -->
+        </div>
+
+        <!-- Marquee -->
+        <marquee behavior="alternate" bgcolor="#8EB7FF" direction="left" height="20%" width="100%" hspace="2" vspace="10" scrollamount="3" scrolldelay="40">
+            Preencha o Formulário abaixo e fique por dentro das novidades!
+        </marquee> <!-- A tag <marquee> é obsoleta em HTML5. Considere usar CSS para animações. -->
+        <br><br>
+
+        <!-- Script -->
+        <script>
+            function valida(f) {
+                if (f.nome.value == "") { // Corrigido de "=" para "=="
+                    alert("O campo nome não pode ficar vazio!");
+                    return false;
+                }
+            }
+        </script>
+
+        <!-- Form, Label, Input -->
+        <form action="validar formulario.html" method="GET" onsubmit="return valida(this);"> <!-- "validar formulario.html" deve ser um caminho válido. -->
+            <fieldset>
+                <!-- Formulário de Cadastro -->                
+                <legend><h3 id="link3">Formulário de Cadastro</h3></legend>
+
+                <!-- Nome -->
+                <label for="nome">Nome:</label>
+                <input type="text" size="30" maxlength="50" name="nome" value=""> <!-- O tipo "nome" não existe. Deve ser "text". -->
+                <label for="data">Data de nascimento:</label>
+                <input type="date" size="10" maxlength="50" name="data" value=""> <!-- Corrigido o tipo de "data" para "date". -->
+                <label for="email">E-mail:</label>
+                <input type="email" size="30" maxlength="50" name="email" value="">
+                <br>
+
+                <!-- Gênero -->        
+                <label>Gênero:</label>
+                <input type="radio" id="masculino" name="genero" value="masculino">Masculino
+                <input type="radio" id="feminino" name="genero" value="feminino">Feminino
+                <br><br>
+
+                <!-- Telefone -->        
+                <label for="telefone">Telefone:</label>
+                <input type="tel" size="11" maxlength="50" name="telefone" value="">
+
+                <!-- Estado Civil -->
+                <p><label for="civil">Estado Civil:</label></p>
+                <input type="radio" name="civil" value="Solteiro"> Solteiro(a)
+                <input type="radio" name="civil" value="Casado"> Casado(a)
+                <input type="radio" name="civil" value="Amaziado"> Amaziado(a)
+                <br>
+
+                <!-- Endereço -->
+                <label for="endereco">Endereço:</label> <!-- Corrigido "endereço" para "endereco" para evitar problemas com caracteres especiais. -->
+                <input type="text" size="50" maxlength="50" name="endereco" value=""> <!-- Corrigido "endereço" para "endereco". -->
+                <p>Cidade:
+                    <select name="cidade">
+                        <!-- Opções do select corrigidas para valores mais apropriados. -->
+                        <option value="">Selecione...</option>
+                        <option value="jales">Jales</option>
+                        <option value="taquaritinga">Taquaritinga</option>
+                        <option value="jaboticabal">Jaboticabal</option>
+                        <option value="ribeirao_preto">Ribeirão Preto</option>
+                        <option value="matao">Matão</option>
+                        <option value="araraquara">Araraquara</option>
+                    </select>
+                </p>
+
+                <!-- Checkbox -->
+                <p>Quais cursos a seguir você já fez ou tem vontade de fazer?</p>
+                <!-- Lista de checkboxes para cursos. Tudo certo aqui. -->
+
+                <!-- Textarea -->
+                <p>Deixe sua opinião sobre o curso aqui:</p>
+                <textarea name="areadetexto" cols="45" rows="6"></textarea>
+                <p> 
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
+            </fieldset>
+        </form>
+    </body>
+</html>
