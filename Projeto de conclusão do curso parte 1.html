@@ -15,8 +15,7 @@
 <!--Inicio do Formulário-->
     <fieldset>
     <font color=#FFFFFF>
-    <h1>
-    <legend align="center">Formulário de Conclusão HTML5</legend></h1>
+    <h1 align="center">Formulário de Conclusão HTML5</h1>
     </font> 
 <!--Links para chamar o formulário do curso-->
     <h3 align="center">
@@ -65,19 +64,19 @@
     </font> 
         <h3>
         <font color=#FD7921>
-        <input type="checkbox" name="html5" value="html5" checked>HTML5<br>
+        <input type="checkbox" name="html5" checked>HTML5<br>
         </font>
 
         <font color=#2658E2>
-        <input type="checkbox" name="css" value="css">CSS3<br>
+        <input type="checkbox" name="css">CSS3<br>
         </font>
 
         <font color=#0E428F>
-        <input type="checkbox" name="php" value="php">PHP<br>
+        <input type="checkbox" name="php">PHP<br>
         </font>
 
         <font color=#F8F521>
-        <input type="checkbox" name="javas" value="javas">JavaScript<br><br>
+        <input type="checkbox" name="javas">JavaScript<br><br>
         </font>
         <a href="#inicio">Voltar ao Inicio</a>               
         </h3>
@@ -109,7 +108,7 @@
             <li>Implementação do HTML5</li>
             <li>Conceitos basicos de JavaScript</li>
         </ul>
-            <a href="#inicio">Voltar ao Inicio</a></h3> 
+            <a href="#inicio">Voltar ao Inicio</a></h3>
         
 <!--3° Espaçamento do formulário-->
         <h1>
@@ -122,28 +121,43 @@
         </h1>
 
 <!--Proximo passo do curso HTML + CSS3-->
-    <form action="" method="GET" id="link3" novalidate>
+    <form action="" method="GET" id="link3" onsubmit="return valida(this)" novalidate>
 
-        <h2><label for="resposta">Qual é a resposta certa?</label></h2>
+        <h1><label for="resposta">Qual é a resposta certa?</label></h1>
 
         <h4>Fui bem na 1° parte do curso HTML5?</h4>
 
 
-        <button onclick="location.href='OBRIGADO.html'">Ir para a página destino</button>
+        <button style="width: 70px; height: 30px;" onclick="exibirMensagem()">Sim</button>
+
+        <button style="width: 70px; height: 30px;" onclick="mostrarAlerta()">Não</button>
 
         <br><br>
 
         <a href="#inicio">Voltar ao inicio</a>
 
-        <h1>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        </h1>
+        <br><br>
 
+        <img style="margin: 0 auto; display: block;" src="professor.jpeg" alt="professor" width="550" height="700"> 
+        
     </fieldset>
+
+    <script>
+
+        function exibirMensagem(){
+            alert("OBRIGADO POR ME AJUDAR NOS ESTUDOS PROFESSOR, TENHA UM ÓTIMO DIA! 😄")
+        }
+        function valida (f){
+            if (f.name.value==""){
+                alert("Resposta Errada Professor😅🤭");
+                return false;
+            }
+            return true;
+        }
+        function mostrarAlerta(){
+            alert("Resposta Errada Professor😅🤭")
+        }
+
+    </script>
 </body>
 </html>
