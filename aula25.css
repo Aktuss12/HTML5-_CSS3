@@ -1,0 +1,16 @@
+body{
+
+    background-color: rgb(61, 61, 61);
+    background-image: url("leao.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: top right;
+
+}
+
+h1{
+
+    color: rgb(0, 84, 211);
+    background-color: rgb(255, 255, 255); 
+
+}
