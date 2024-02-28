@@ -1,0 +1,13 @@
+body{
+
+background: #363636 url("leao.png") no-repeat scroll center;
+background-position: center;
+
+}
+
+h1{
+
+    color: rgb(0, 84, 211);
+    background-color: rgb(255, 255, 255); 
+
+}
