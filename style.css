@@ -1,12 +1,25 @@
-body{
-
-    background: url('paisagem.jpg') no-repeat;
-    -webkit-background-size: cover;
-
+p{
+    text-indent: 500px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
 }
 
 h1{
+    text-align: right;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-shadow: red 1px 1px 1px;
+}
 
-    background-color: white;
-    
+h2{
+    text-align: center;
+    text-decoration: underline;
+    letter-spacing: 2px;
+    text-transform: lowercase;
+}
+
+h3{
+    text-indent: 70px;
+    text-decoration: underline;
+    text-transform: none;
 }
