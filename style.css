@@ -1,25 +1,9 @@
-p{
-    text-indent: 500px;
-    letter-spacing: 1px;
-    text-transform: capitalize;
+a{
+    color: rgb(0, 81, 255);
 }
 
 h1{
-    text-align: right;
-    text-decoration: underline;
-    text-transform: uppercase;
-    text-shadow: red 1px 1px 1px;
-}
-
-h2{
     text-align: center;
-    text-decoration: underline;
+    text-transform: inherit;
     letter-spacing: 2px;
-    text-transform: lowercase;
-}
-
-h3{
-    text-indent: 70px;
-    text-decoration: underline;
-    text-transform: none;
 }
