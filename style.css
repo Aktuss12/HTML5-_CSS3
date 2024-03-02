@@ -1,52 +1,48 @@
-li {
-    list-style: none;
-}
-
-.sites {
-    color: blueviolet;
-    text-decoration: none;
-}
-
-.link2 {
-    color: rgb(165, 44, 44);
-    text-decoration: none;
-}
-
-a:visited {
-    color: rgb(255, 0, 0);
-}
-
-a:active {
-    background-color: yellow;
-}
-
-a:hover {
-    text-transform: uppercase;
-    font-weight: bold;
+body{
+    background-color: black;
     color: rgb(255, 255, 255);
-    background-color: rgb(0, 0, 0);
+    margin-top: 90px;
+    margin-right: 450px;
+    margin-bottom: 10px;
+    margin-left: 450px;
 }
 
-a.carros {
-    color: #18d312;
+p{
+    background: green;
+    padding-left: 100px;
+    padding-right: 90px;
+    border-width: 5px;
+    border-style: dashed;
+    border-color: blue;
 }
 
-a.motos {
-    color: rgb(32, 121, 255);
+h1{
+    background: pink;
+    padding-left: 100px;
+    padding-right: 90px;
+    border-width: thick;
+    border-style: solid;
+    border-color: red;
+
+    border-bottom-width: thick;
+    border-bottom-style: solid;
+    border-top-color: blue;
+
+    border-bottom-width: thick;
+    border-bottom-style: solid;
+    border-bottom-color: green;
+
+    border-bottom-width: thick;
+    border-bottom-style: solid;
+    border-bottom-color: orange;
 }
 
-#c1{
-    color: blue;
+h2{
+    background: blue;
+    padding-left: 100px;
+    padding-right: 90px;
+    border-width: 15px;
+    border-style: outset;
+    border-color: yellow;
 }
 
-#c2{
-    color: red;
-}
-
-#s1{
-    color: yellow;
-}
-
-#s2{
-    color: green;
-}
